@@ -37,10 +37,19 @@ public class Main {
         return vertical+horizontel;
     }
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        String str = "abc";
-        Permuation(str,"");
-        int m =2, n =4;
-        System.out.println(placetiles(n,m));
+//        System.out.println("Hello World");
+//        String str = "abc";
+//        Permuation(str,"");
+//        int m =2, n =4;
+//        System.out.println(placetiles(n,m));
+        binaryRepresentaionOfaNumber(13);
+    }
+
+    public static void binaryRepresentaionOfaNumber(int n){
+        if(n==0){
+            return;
+        }
+        binaryRepresentaionOfaNumber(n/2);
+        System.out.print(n%2);
     }
 }
